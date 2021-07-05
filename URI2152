@@ -1,0 +1,25 @@
+casos = int(input())
+for i in range(0, casos):
+  h, m, o = map(int, input().split(' '))
+  if h >= 10:
+    if m >= 10:
+      if o == 0:
+        print(f"{h}:{m} - A porta fechou!")
+      else:
+        print(f"{h}:{m} - A porta abriu!")
+    else:
+      if o == 0:
+       (print(f"{h}:0{m} - A porta fechou!"))
+      else:
+       print(f"{h}:0{m} - A porta abriu!")
+  else:
+      if m >= 10:
+        if o == 0:
+          print(f"0{h}:{m} - A porta fechou!")
+        else:
+          print(f"0{h}:{m} - A porta abriu!")
+      else:
+        if o == 0:
+          (print(f"0{h}:0{m} - A porta fechou!"))
+        else:
+          print(f"0{h}:0{m} - A porta abriu!")     
