@@ -1,0 +1,11 @@
+def main():
+  cod, qnt, preco = input().split(' ')
+  cod = int(cod)
+  qnt = int(qnt)
+  preco = float(preco)
+  total = preco * qnt
+  return total
+
+conta1 = main()
+conta2 = main()
+print(f"VALOR A PAGAR: R$ {conta1+conta2:.2f}")
